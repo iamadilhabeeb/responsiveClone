@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.navbar .container #myNavbar span{
+    font-size: 27px;
+}
+
+.navbar{
+  transition: 0.5s ease-in-out;
+}
+
+.header{
+  min-height: 900px;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/header-background.jpg') center center no-repeat;
+  background-size: cover;
+}
+.header #carouselImg{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.register{
+  background-color: #f8b547;
+}
+.footer-link li a{
+  color: #f8b547;
+}
+.footer-link li a:hover {
+  color: #fff;
+  text-decoration: dashed;
+}
+.points{
+  background: #fbf9f5;
+}
+
+.number span{
+  background-color: #f8b547;
+}
+
+.invitation-bg{
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/invitation-background.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+
+@media (max-width:992px){
+  .header{
+    min-height: 800px;
+    padding-top: 150px; 
+  }
+}
+@media(max-width: 768px){
+  .header{
+    max-height: 600px;
+  }
+  .header #carouselImg{
+    width: 95%;
+  }
+  .footer-text{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer-link{
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+  }
+  .license{
+    align-self: center;
+  }
+}
+
+
+@media(max-width: 576px){
+  .header #carouselImg{
+    width: 95%;
+  }
+  .footer-text{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer-text h3{
+    font-size: 12px; 
+  }
+  .license span{
+    align-content: flex-start;
+
+  }
+}
